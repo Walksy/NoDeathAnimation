@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "nodeathanimation",
+	"version": "${version}",
+	"name": "No Death Animation",
+	"description": "Removes the death animation, like on mctiers.",
+	"authors": [
+		"Walksy"
+	],
+	"contact": {
+    "issues": "https://github.com/Walksy/ShieldFixes/issues",
+    "sources": "https://github.com/Walksy/ShieldFixes",
+    "homepage": "https://discord.com/invite/zeu7uNuBWY"
+	},
+	"license": "MIT",
+	"icon": "assets/nodeathanimation/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+      "walksy.nodeathanimation.NoDeathAnimation"
+		]
+	},
+	"mixins": [
+      "nodeathanimation.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "*",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

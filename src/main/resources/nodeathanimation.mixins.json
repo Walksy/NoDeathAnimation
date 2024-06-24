@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "walksy.nodeathanimation.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+    "ClientPlayerEntityMixin",
+    "LivingEntityMixin",
+    "LivingEntityRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
