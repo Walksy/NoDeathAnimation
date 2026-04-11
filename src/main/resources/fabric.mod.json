@@ -3,30 +3,34 @@
 	"id": "nodeathanimation",
 	"version": "${version}",
 	"name": "No Death Animation",
-	"description": "Removes the death animation, like on mctiers.",
+	"description": "Removes the death animation tilt on entities",
 	"authors": [
-		"Walksy"
+    "Walksy"
 	],
 	"contact": {
-    "issues": "https://github.com/Walksy/ShieldFixes/issues",
-    "sources": "https://github.com/Walksy/ShieldFixes",
+    "issues": "https://github.com/Walksy/NoDeathAnimation/issues",
+    "sources": "https://github.com/Walksy/NoDeathAnimation",
     "homepage": "https://discord.com/invite/zeu7uNuBWY"
 	},
 	"license": "MIT",
-	"icon": "assets/nodeathanimation/icon.png",
+	"icon": "assets/walksy/icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"main": [
       "walksy.nodeathanimation.NoDeathAnimation"
-		]
+		],
+    "walksylib": [
+      "walksy.nodeathanimation.config.WalksyLibIntegration"
+    ]
 	},
 	"mixins": [
-      "nodeathanimation.mixins.json"
+    "nodeathanimation.mixins.json"
 	],
 	"depends": {
 		"fabricloader": "*",
 		"minecraft": "*",
 		"java": ">=17",
-		"fabric-api": "*"
-	}
+		"fabric-api": "*",
+    "walksylib": ">=0.9.95"
+  }
 }
